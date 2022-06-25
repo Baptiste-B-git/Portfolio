@@ -19,3 +19,31 @@ if(window.matchMedia('(max-width: 1300px)')){
     })
 
 }
+
+// Animation écriture
+const txtAnim = document.querySelector('.txt-animation');
+
+let typewriter = new Typewriter(txtAnim, {
+    loop: false,
+    deleteSpeed: 20
+})
+
+typewriter
+.pauseFor(1800)
+.changeDelay(20)
+.typeString('Moi c\'est Baptiste Biancardino')
+.pauseFor(300)
+.typeString('<strong>, Développeur Full-stack</strong> !')
+.pauseFor(1000)
+.deleteChars(13)
+.typeString('<span style="color: #1E90FF;"> CSS</span> !')
+.pauseFor(1000)
+.deleteChars(5)
+.typeString('<span style="color: #EA39ff;"> HTML</span> !')
+.pauseFor(1000)
+.deleteChars(6)
+.typeString('<span style="color: #27ae60;"> VueJS</span> !')
+.pauseFor(1000)
+.deleteChars(8)
+.typeString('<span style="color: rgb(255, 127, 0);"> JavaScript</span> !')
+.start()
