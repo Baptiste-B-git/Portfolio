@@ -98,11 +98,22 @@ body{
 
     .nav-gauche{
         left: -300px!important;
+        width: 250px;
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .menu-visible{
         left: 0px!important;
     }
-
+    .bloc-menu:nth-child(1){
+        display: none;
+    }
+    .bloc-menu:nth-child(7){
+        display: none;
+    }
     .btn-rond-menu{
         width: 70px;
         height: 70px;
