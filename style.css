@@ -22,6 +22,7 @@ body{
     left: 0;
     border-right: 1px dashed #f1f1f1;
     z-index: 5;
+    transition: all 0.2s ease-in-out;
 }
 .bloc-menu{
     width: 100%;
@@ -96,7 +97,10 @@ body{
 @media screen and (max-width: 1300px){
 
     .nav-gauche{
-        display: none;
+        left: -300px!important;
+    }
+    .menu-visible{
+        left: 0px!important;
     }
 
     .btn-rond-menu{
@@ -149,5 +153,19 @@ body{
         width: 100%;
         height: 4px;
         border-radius: 5px;
+    }
+
+    .cont-ligne.active .ligne-unique::after{
+        top:0;
+        transform: rotate(45deg);
+        transition: top 300ms ease, transform 300ms 300ms ease;
+    }
+    .cont-ligne.active .ligne-unique {
+        background: transparent;
+    }
+    .cont-ligne.active .ligne-unique::before{
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: top 300ms ease, transform 300ms 300ms ease;
     }
 };
