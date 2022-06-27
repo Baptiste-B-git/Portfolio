@@ -690,9 +690,16 @@ h1{
     }
 }
 @media screen and (max-width: 340px) {
-    .item {
+    .item.vague1 {
+        height: 440px;
+    }
+    .item.vague2 {
+        height: 385px;
+    }
+    .item.vague3 {
         height: 380px;
     }
+
 }
 
 
