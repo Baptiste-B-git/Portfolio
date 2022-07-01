@@ -268,14 +268,6 @@ h1{
 }
 .media:hover{
     transform: scale(1.1);
-    background: black;
-}
-.media2:hover{
-    background-color: #0077b5;
-    border: none;
-}
-.media3:hover{
-    background: #00acee;
 }
 .btn-rond{
     width: 70px;
